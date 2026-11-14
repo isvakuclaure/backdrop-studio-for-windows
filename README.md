@@ -1,4 +1,4 @@
-# Fondos de pantallas
+# Backdrop Studio for Windows
 
 Aplicación local para Windows que organiza tus imágenes y permite aplicarlas al escritorio y a la pantalla de bloqueo.
 

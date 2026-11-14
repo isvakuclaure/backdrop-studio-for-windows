@@ -35,7 +35,7 @@ class Gallery : Form {
  string Selected { get {return library.SelectedItems.Count==0?null:(string)library.SelectedItems[0].Tag;} }
  static bool Supported(string path){return Array.IndexOf(new[]{".jpg",".jpeg",".png",".bmp"},Path.GetExtension(path).ToLowerInvariant())>=0;}
  public Gallery(){
-  Text="Fondos de pantallas";Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(24,26,31);ForeColor=ink;ClientSize=new Size(1120,720);MinimumSize=new Size(900,620);StartPosition=FormStartPosition.CenterScreen;
+  Text="Backdrop Studio for Windows";Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(24,26,31);ForeColor=ink;ClientSize=new Size(1120,720);MinimumSize=new Size(900,620);StartPosition=FormStartPosition.CenterScreen;
   var layout=new TableLayoutPanel{Dock=DockStyle.Fill,Padding=new Padding(16),ColumnCount=2,RowCount=3};
   layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent,100));layout.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute,320));
   foreach(int h in new[]{59,0,30})layout.RowStyles.Add(h==0?new RowStyle(SizeType.Percent,100):new RowStyle(SizeType.Absolute,h));
